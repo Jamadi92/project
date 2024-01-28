@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --deepbrown: #795349;
+    --lightbrown: #e7d4c5;
+    --brightbrown: #e77c41;
+    --fadebrown: #faede5;
+}
+
+body {
+    background-color: var(--lightbrown);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grandparent {
+    display: flex;
+    width: 75%;
+}
+
+.left {
+    flex: 1;
+    background-color: var(--deepbrown);
+}
+
+.right {
+    flex: 1;
+    padding: 3rem;
+    background-color: var(--fadebrown);
+}
+
+.left img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    align-items: center;
+    position: relative;
+    left: 3rem;
+    top: 3rem;
+}
+
+.right img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.right .top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top h5 {
+    color: var(--brightbrown);
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .grandparent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:right;
+        align-items: center;
+    }
+
+
+
+}
+
+.l {
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    line-height: 0.5;
+
+}
+
+
+.l h5 {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 3rem;
+    line-height: 1.5;
+}
+
+.R h5 {
+    display: flex;
+    line-height: 1;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.R {
+    display: flex;
+    flex-direction: column;
+    height: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 4rem;
+    line-height: 0.5;
+    position: relative;
+    right: 3rem;
+    bottom: 5rem;
+
+
+}
+
+.sub div {
+    color: var(--brightbrown);
+    position: relative;
+    bottom: 7rem;
+
+}
+.sub h5{
+    position: relative;
+    bottom: 3.5rem;
+}
+.sub .us{
+    position: relative;
+    bottom: 3rem;
+}
+
+.pay{
+   display: inline;
+   position: relative;
+   bottom: 2rem;
+}
+
+.pay input {
+    display: flex;
+    flex-direction: row;
+
+}
+.hr{
+    position: relative;
+    bottom: 15%;
+    line-height: 8;
+}
+.hh hr{
+    position: relative;
+    bottom: 2.5rem;
+    
+}
+.radio{
+    display: flex;
+    position: relative;
+    bottom: 1.5rem;
+}
+.radio .Paypal{
+    position: relative;
+    left: 1rem;
+    
+}
+.Credit{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 1rem;
+}
+.Credit .C{
+    position: relative;
+    left: 1rem;
+
+}
+.img{
+    display: flex;
+    flex-direction: row;
+    width: 2%;
+    position: relative;
+    bottom: 4rem;
+    left: 12rem;
+    
+
+}
+
+.break{
+    position: relative;
+    top: 1rem;
+}
+
+.pp{
+    position: relative;
+    top: 0.5rem;
+}
+   
+
